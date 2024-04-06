@@ -1,0 +1,28 @@
+public class tryAndCatch {
+    public static void main(String[] args) {
+        int i=2;
+        int j=0;
+        int[] arr= new int[5];
+        try{
+            j=18/i;
+            System.out.println(arr[1]);
+            System.out.println(arr[6]);
+        }
+
+        catch(ArithmeticException e)
+        {
+            System.out.println("no cannot be divisible by 0");
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("be in the limits");
+        }
+        catch(Exception e)
+        {
+            System.out.println("something went wrong"+e);
+        }
+
+        /*1*/System.out.println(j);
+        /*2*/System.out.println("Byee");
+    }
+}
