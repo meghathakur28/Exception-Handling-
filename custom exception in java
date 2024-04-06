@@ -1,0 +1,26 @@
+class NavinException extends Exception {
+     public NavinException(String string)
+     {
+         super(string);
+     }
+}
+public class tryAndCatch {
+
+    public static void main(String[] args) {
+        int i=0;
+        int j=0;
+        try{
+            j=18/i;
+            if(j==0)
+                throw new NavinException("it handles ");
+        }
+
+        catch(NavinException e)
+        {
+            System.out.println("no cannot be divisible by 0");
+        }
+
+        /*1*/System.out.println(j);
+        /*2*/System.out.println("Byee");
+    }
+}
