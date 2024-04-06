@@ -1,0 +1,20 @@
+public class tryAndCatch {
+    public static void main(String[] args) {
+        int i=0;
+        int j=0;
+        try{
+            j=18/i;//try block throw an exception in the form of object
+        }
+
+        catch(Exception e)//Exception is the class and e is the obj
+        {
+            System.out.println("Something went wrong.....");//catch block catch the exception in the form of block
+        }
+
+        /*1*/System.out.println(j);
+        /*2*/System.out.println("Byee");
+    }
+}
+//catch block is executed only if there is an exception and there is not exception catch block will not run
+//line no 1 and 2 did not run if there is no try and catch block because if j=18/0 throw an exception
+//then the execution of program stopped there 
