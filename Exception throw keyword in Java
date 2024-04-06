@@ -1,0 +1,28 @@
+public class tryAndCatch {
+    public static void main(String[] args) {
+        int i=0;
+        int j=0;
+        try{
+            j=18/i;
+            if(j==0)
+                throw new ArithmeticException();
+        }
+
+        catch(ArithmeticException e)
+        {
+            j=18/1;
+            System.out.println("no cannot be divisible by 0");
+        }
+        catch(ArrayIndexOutOfBoundsException e)
+        {
+            System.out.println("be in the limits");
+        }
+        catch(Exception e)
+        {
+            System.out.println("something went wrong"+e);
+        }
+
+        /*1*/System.out.println(j);
+        /*2*/System.out.println("Byee");
+    }
+}
