@@ -8,7 +8,7 @@ public class tryAndCatch {
 
         catch(Exception e)//Exception is the class and e is the obj
         {
-            System.out.println("Something went wrong.....");//catch block catch the exception in the form of block
+            System.out.println("Something went wrong.....");//catch block catch the exception in the form of object
         }
 
         /*1*/System.out.println(j);
